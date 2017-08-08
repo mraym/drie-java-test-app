@@ -20,12 +20,12 @@ public class Main {
     port(Integer.valueOf(System.getenv("PORT")));
     staticFileLocation("/public");
 
-    get("/hello", (req, res) -> "Hello World");
+    get("/hello", (req, res) -> "Hello drie");
     get("/really/really/really/lomg/path/integration/test", (req, res) -> "Hello World");
 
     get("/say-hello-drie", (request, response) -> {
       Map<String, String> messageMap = new HashMap<String,String>();
-      messageMap.put("message", "Hello Java Spark Microframework on Drie!");
+      messageMap.put("message", "Hello Java Spark Microframework on drie!");
       
       Gson gson = new Gson();
       String json = gson.toJson(messageMap);
