@@ -25,7 +25,7 @@ public class Main {
 
     get("/say-hello-drie", (request, response) -> {
       Map<String, String> messageMap = new HashMap<String,String>();
-      messageMap.put("message", "Hello Java Spark Microframework on Drie!");
+      messageMap.put("message", "Hello Java Spark Microframework on Drie 2");
       
       Gson gson = new Gson();
       String json = gson.toJson(messageMap);
